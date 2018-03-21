@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"/>
+   
+    <link rel="stylesheet" href="assets/plugins/font-awesome1/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/plugins/simple-line-icons/css/simple-line-icons.css"/>
+   
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Account <span class="sr-only">(current)</span></a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Notifications
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log out</a>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- aside -->
+    <aside class="left-aside">
+      <ul class="menus">
+        <li class="d-flex">
+          <i class="icon-chart"></i>
+          <p>Dashboard</p>
+        </li>
+        <li class="d-flex">
+          <i class="icon-layers"></i>
+          <p>Projects</p>
+        </li>
+        <li class="d-flex">
+          <i class="icon-wallet"></i>
+          <p>Transcations</p>
+        </li>
+        <li class="d-flex">
+          <i class="icon-user"></i>
+          <p>Profile</p>
+        </li>
+      </ul>
+    </aside>
+    <!-- main sections -->
+    <section class="main-section">
+      <div class="panels">
+        <!-- grid system -->
+        <div class="row">
+          <div class="col">
+            <!-- card -->
+            <div class="card">
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">102</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Projects</h6>
+                  <hr>
+                  <small>Last Week</small>
+                </div>
+                <i class="fa fa-briefcase"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- card -->
+            <div class="card">
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">102</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Projects</h6>
+                  <hr>
+                  <small>Last Week</small>
+                </div>
+                <i class="fa fa-briefcase"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- card -->
+            <div class="card">
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">102</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Projects</h6>
+                  <hr>
+                  <small>Last Week</small>
+                </div>
+                <i class="fa fa-briefcase"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- card -->
+            <div class="card">
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title">102</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Projects</h6>
+                  <hr>
+                  <small>Last Week</small>
+                </div>
+                  <i class="fa fa-briefcase"></i>
+              </div>
+            </div>
+            
+          </div>
+    
+        </div>
+        
+        
+      
+      
+        
+        
+      </div>   
+    </section>
+  </main>
+  <script  href="assets/plugins/jquery.min.js"></script> 
+  <script  href="assets/plugins/popper.min.js"></script>
+  <script  href="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- notify js -->
+  <script  href="assets/plugins/notify.min.js"></script>
+  <script  href="assests/js/main.js"></script>
+
+  <script>
+    
+    $(document).ready(function(){
+      var msg = 'Good ';
+      var_date = new Date().getHours();
+      if(_hour >= 1 && _hour < 12){
+        msg += 'Morning';
+      }
+      if(_hour >= 12 && _hour < 16){
+        msg += 'Afternoon';
+      }
+      if(_hour >= 16 && _hour < 19){
+        msg += 'Evening';
+      }
+      if(_hour >= 19 ){
+        msg += 'Goodnight';
+      }
+
+
+      console.log(msg);
+
+      $.notify(msg + ' Stranger ');
+
+    });
+        
+
+  </script>
+
+</body>
+</html>
